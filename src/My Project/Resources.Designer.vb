@@ -230,5 +230,68 @@ Namespace My.Resources
                 Return ResourceManager.GetString("mandelbrot.y_min", resourceCulture)
             End Get
         End Property
+        
+        '''<summary>
+        '''  50 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("tricorn.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  tricorn.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_output_file() As String
+            Get
+                Return ResourceManager.GetString("tricorn.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  4 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_threshold() As String
+            Get
+                Return ResourceManager.GetString("tricorn.threshold", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  1.7 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_x_max() As String
+            Get
+                Return ResourceManager.GetString("tricorn.x_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -2.3 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_x_min() As String
+            Get
+                Return ResourceManager.GetString("tricorn.x_min", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  2.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_y_max() As String
+            Get
+                Return ResourceManager.GetString("tricorn.y_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -2.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property tricorn_y_min() As String
+            Get
+                Return ResourceManager.GetString("tricorn.y_min", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace

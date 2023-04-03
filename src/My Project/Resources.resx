@@ -174,4 +174,25 @@
   <data name="mandelbrot.y_min" xml:space="preserve">
     <value>-1.5</value>
   </data>
+  <data name="tricorn.max_iterations" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="tricorn.output_file" xml:space="preserve">
+    <value>tricorn.png</value>
+  </data>
+  <data name="tricorn.threshold" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tricorn.x_max" xml:space="preserve">
+    <value>1.7</value>
+  </data>
+  <data name="tricorn.x_min" xml:space="preserve">
+    <value>-2.3</value>
+  </data>
+  <data name="tricorn.y_max" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="tricorn.y_min" xml:space="preserve">
+    <value>-2.0</value>
+  </data>
 </root>

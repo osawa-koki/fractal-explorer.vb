@@ -40,6 +40,20 @@ Module Program
     Julia.Draw(julia_config)
     items.Add(Resources.julia_output_file)
 
+    Dim tricorn_config As ITricorn = New ITricorn With {
+      .width = width,
+      .height = height,
+      .x_min = Double.Parse(Resources.tricorn_x_min),
+      .x_max = Double.Parse(Resources.tricorn_x_max),
+      .y_min = Double.Parse(Resources.tricorn_y_min),
+      .y_max = Double.Parse(Resources.tricorn_y_max),
+      .threshold = Integer.Parse(Resources.tricorn_threshold),
+      .max_iterations = Integer.Parse(Resources.tricorn_max_iterations),
+      .output_file = Path.Combine(output_directory, Resources.tricorn_output_file)
+    }
+    Tricorn.Draw(tricorn_config)
+    items.Add(Resources.tricorn_output_file)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, "items.txt"), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

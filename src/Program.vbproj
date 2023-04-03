@@ -72,8 +72,10 @@
   <ItemGroup>
     <Compile Include="Drawer.Julia.vb" />
     <Compile Include="Drawer.Mandelbrot.vb" />
+    <Compile Include="Drawer.Tricorn.vb" />
     <Compile Include="Interface.Julia.vb" />
     <Compile Include="Interface.Mandelbrot.vb" />
+    <Compile Include="Interface.Tricorn.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
