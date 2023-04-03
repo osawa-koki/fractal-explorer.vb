@@ -59,5 +59,113 @@ Namespace My.Resources
                 resourceCulture = value
             End Set
         End Property
+        
+        '''<summary>
+        '''  512 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property global_height() As String
+            Get
+                Return ResourceManager.GetString("global.height", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  ./dist に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property global_output_directory() As String
+            Get
+                Return ResourceManager.GetString("global.output_directory", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  512 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property global_width() As String
+            Get
+                Return ResourceManager.GetString("global.width", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  black に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_background_color() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.background_color", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  100 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_color_hue() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.color_hue", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  20 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  mandelbrot.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_output_file() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  4 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_threshold() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.threshold", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  0.8 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_x_max() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.x_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -2.2 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_x_min() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.x_min", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_y_max() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.y_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property mandelbrot_y_min() As String
+            Get
+                Return ResourceManager.GetString("mandelbrot.y_min", resourceCulture)
+            End Get
+        End Property
     End Module
 End Namespace
