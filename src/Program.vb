@@ -8,8 +8,9 @@ Module Program
     Dim output_directory = Resources.global_output_directory
 
     Dim items = New List(Of String)
+    Directory.CreateDirectory(output_directory)
 
-    Dim _mandelbrot As IMandelbrot = New IMandelbrot With {
+    Dim mandelbrot_config As IMandelbrot = New IMandelbrot With {
       .width = width,
       .height = height,
       .x_min = Double.Parse(Resources.mandelbrot_x_min),
@@ -20,10 +21,25 @@ Module Program
       .max_iterations = Integer.Parse(Resources.mandelbrot_max_iterations),
       .output_file = Path.Combine(output_directory, Resources.mandelbrot_output_file)
     }
-    Mandelbrot.Draw(_mandelbrot)
+    Mandelbrot.Draw(mandelbrot_config)
     items.Add(Resources.mandelbrot_output_file)
 
-    Directory.CreateDirectory(output_directory)
+    Dim julia_config As IJulia = New IJulia With {
+      .width = width,
+      .height = height,
+      .x_min = Double.Parse(Resources.julia_x_min),
+      .x_max = Double.Parse(Resources.julia_x_max),
+      .y_min = Double.Parse(Resources.julia_y_min),
+      .y_max = Double.Parse(Resources.julia_y_max),
+      .c_re = Double.Parse(Resources.julia_c_re),
+      .c_im = Double.Parse(Resources.julia_c_im),
+      .threshold = Integer.Parse(Resources.julia_threshold),
+      .max_iterations = Integer.Parse(Resources.julia_max_iterations),
+      .output_file = Path.Combine(output_directory, Resources.julia_output_file)
+    }
+    Julia.Draw(julia_config)
+    items.Add(Resources.julia_output_file)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, "items.txt"), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

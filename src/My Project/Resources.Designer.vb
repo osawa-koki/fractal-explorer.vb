@@ -88,20 +88,83 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  black に類似しているローカライズされた文字列を検索します。
+        '''  0.6 に類似しているローカライズされた文字列を検索します。
         '''</summary>
-        Friend ReadOnly Property mandelbrot_background_color() As String
+        Friend ReadOnly Property julia_c_im() As String
             Get
-                Return ResourceManager.GetString("mandelbrot.background_color", resourceCulture)
+                Return ResourceManager.GetString("julia.c_im", resourceCulture)
             End Get
         End Property
         
         '''<summary>
-        '''  100 に類似しているローカライズされた文字列を検索します。
+        '''  -0.4 に類似しているローカライズされた文字列を検索します。
         '''</summary>
-        Friend ReadOnly Property mandelbrot_color_hue() As String
+        Friend ReadOnly Property julia_c_re() As String
             Get
-                Return ResourceManager.GetString("mandelbrot.color_hue", resourceCulture)
+                Return ResourceManager.GetString("julia.c_re", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  70 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("julia.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  julia.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_output_file() As String
+            Get
+                Return ResourceManager.GetString("julia.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  4 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_threshold() As String
+            Get
+                Return ResourceManager.GetString("julia.threshold", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_x_max() As String
+            Get
+                Return ResourceManager.GetString("julia.x_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_x_min() As String
+            Get
+                Return ResourceManager.GetString("julia.x_min", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_y_max() As String
+            Get
+                Return ResourceManager.GetString("julia.y_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -1.5 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property julia_y_min() As String
+            Get
+                Return ResourceManager.GetString("julia.y_min", resourceCulture)
             End Get
         End Property
         

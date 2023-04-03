@@ -70,7 +70,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Drawer.Julia.vb" />
     <Compile Include="Drawer.Mandelbrot.vb" />
+    <Compile Include="Interface.Julia.vb" />
     <Compile Include="Interface.Mandelbrot.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

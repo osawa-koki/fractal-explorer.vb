@@ -126,11 +126,32 @@
   <data name="global.width" xml:space="preserve">
     <value>512</value>
   </data>
-  <data name="mandelbrot.background_color" xml:space="preserve">
-    <value>black</value>
+  <data name="julia.c_im" xml:space="preserve">
+    <value>0.6</value>
   </data>
-  <data name="mandelbrot.color_hue" xml:space="preserve">
-    <value>100</value>
+  <data name="julia.c_re" xml:space="preserve">
+    <value>-0.4</value>
+  </data>
+  <data name="julia.max_iterations" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="julia.output_file" xml:space="preserve">
+    <value>julia.png</value>
+  </data>
+  <data name="julia.threshold" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="julia.x_max" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="julia.x_min" xml:space="preserve">
+    <value>-1.5</value>
+  </data>
+  <data name="julia.y_max" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="julia.y_min" xml:space="preserve">
+    <value>-1.5</value>
   </data>
   <data name="mandelbrot.max_iterations" xml:space="preserve">
     <value>20</value>
