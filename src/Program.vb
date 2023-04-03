@@ -7,7 +7,7 @@ Module Program
     Dim height = Integer.Parse(Resources.global_height)
     Dim output_directory = Resources.global_output_directory
 
-    Directory.CreateDirectory(output_directory)
+    Dim items = New List(Of String)
 
     Dim _mandelbrot As IMandelbrot = New IMandelbrot With {
       .width = width,
@@ -20,8 +20,13 @@ Module Program
       .max_iterations = Integer.Parse(Resources.mandelbrot_max_iterations),
       .output_file = Path.Combine(output_directory, Resources.mandelbrot_output_file)
     }
-
     Mandelbrot.Draw(_mandelbrot)
+    items.Add(_mandelbrot.output_file)
+
+    Directory.CreateDirectory(output_directory)
+    Using sw As New StreamWriter(Path.Combine(output_directory, "items.txt"), True)
+      sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
+    End Using
 
 #If DEBUG Then
     Console.ReadKey()
