@@ -61,6 +61,15 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  items.txt に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property global_artifact_filename() As String
+            Get
+                Return ResourceManager.GetString("global.artifact_filename", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  512 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property global_height() As String

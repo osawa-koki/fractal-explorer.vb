@@ -54,7 +54,7 @@ Module Program
     Tricorn.Draw(tricorn_config)
     items.Add(Resources.tricorn_output_file)
 
-    Using sw As New StreamWriter(Path.Combine(output_directory, "items.txt"), True)
+    Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using
 
