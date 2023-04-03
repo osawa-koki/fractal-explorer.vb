@@ -21,7 +21,7 @@ Module Program
       .output_file = Path.Combine(output_directory, Resources.mandelbrot_output_file)
     }
     Mandelbrot.Draw(_mandelbrot)
-    items.Add(_mandelbrot.output_file)
+    items.Add(Resources.mandelbrot_output_file)
 
     Directory.CreateDirectory(output_directory)
     Using sw As New StreamWriter(Path.Combine(output_directory, "items.txt"), True)
