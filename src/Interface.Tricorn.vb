@@ -9,5 +9,6 @@ Public Class ITricorn
   Public color_hue As Integer
   Public threshold As Integer
   Public max_iterations As Integer
+  Public output_directory As String
   Public output_file As String
 End Class

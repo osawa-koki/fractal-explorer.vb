@@ -1,7 +1,8 @@
 Imports System.Drawing
+Imports System.IO
 
 Module Tricorn
-  Sub Draw(tricorn_config As ITricorn)
+  Sub Draw(tricorn_config As ITricorn, items As List(Of String))
     Dim width = tricorn_config.width
     Dim height = tricorn_config.height
 
@@ -35,7 +36,7 @@ Module Tricorn
         bmp.SetPixel(x, y, _color)
       Next
     Next
-
-    bmp.Save(tricorn_config.output_file, Imaging.ImageFormat.Png)
+    bmp.Save(Path.Combine(tricorn_config.output_directory, tricorn_config.output_file), Imaging.ImageFormat.Png)
+    items.Add(tricorn_config.output_file)
   End Sub
 End Module

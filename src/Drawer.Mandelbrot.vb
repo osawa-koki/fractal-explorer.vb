@@ -1,7 +1,8 @@
+Imports System.IO
 Imports System.Drawing
 
 Module Mandelbrot
-  Sub Draw(mandelbrot_config As IMandelbrot)
+  Sub Draw(mandelbrot_config As IMandelbrot, items As List(Of String))
     Dim width = mandelbrot_config.width
     Dim height = mandelbrot_config.height
 
@@ -35,7 +36,8 @@ Module Mandelbrot
         bmp.SetPixel(x, y, _color)
       Next
     Next
+    bmp.Save(Path.Combine(mandelbrot_config.output_directory, mandelbrot_config.output_file), Imaging.ImageFormat.Png)
+    items.Add(mandelbrot_config.output_file)
 
-    bmp.Save(mandelbrot_config.output_file, Imaging.ImageFormat.Png)
   End Sub
 End Module

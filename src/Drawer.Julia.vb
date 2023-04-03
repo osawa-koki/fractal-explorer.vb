@@ -1,20 +1,21 @@
 Imports System.Drawing
+Imports System.IO
 
 Module Julia
-  Sub Draw(mandelbrot_config As IJulia)
-    Dim width = mandelbrot_config.width
-    Dim height = mandelbrot_config.height
+  Sub Draw(julia_config As IJulia, items As List(Of String))
+    Dim width = julia_config.width
+    Dim height = julia_config.height
 
-    Dim x_min = mandelbrot_config.x_min
-    Dim x_max = mandelbrot_config.x_max
-    Dim y_min = mandelbrot_config.y_min
-    Dim y_max = mandelbrot_config.y_max
-    Dim c_re = mandelbrot_config.c_re
-    Dim c_im = mandelbrot_config.c_im
+    Dim x_min = julia_config.x_min
+    Dim x_max = julia_config.x_max
+    Dim y_min = julia_config.y_min
+    Dim y_max = julia_config.y_max
+    Dim c_re = julia_config.c_re
+    Dim c_im = julia_config.c_im
 
-    Dim color_base = mandelbrot_config.color_hue
-    Dim threshold = mandelbrot_config.threshold
-    Dim max_iterations = mandelbrot_config.max_iterations
+    Dim color_base = julia_config.color_hue
+    Dim threshold = julia_config.threshold
+    Dim max_iterations = julia_config.max_iterations
 
     Dim bmp As New Bitmap(width, height)
 
@@ -37,7 +38,7 @@ Module Julia
         bmp.SetPixel(x, y, color)
       Next
     Next
-
-    bmp.Save(mandelbrot_config.output_file, Imaging.ImageFormat.Png)
+    bmp.Save(Path.Combine(julia_config.output_directory, julia_config.output_file), Imaging.ImageFormat.Png)
+    items.Add(julia_config.output_file)
   End Sub
 End Module

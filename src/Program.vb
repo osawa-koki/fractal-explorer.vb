@@ -19,10 +19,10 @@ Module Program
       .y_max = Double.Parse(Resources.mandelbrot_y_max),
       .threshold = Integer.Parse(Resources.mandelbrot_threshold),
       .max_iterations = Integer.Parse(Resources.mandelbrot_max_iterations),
-      .output_file = Path.Combine(output_directory, Resources.mandelbrot_output_file)
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.mandelbrot_output_file
     }
-    Mandelbrot.Draw(mandelbrot_config)
-    items.Add(Resources.mandelbrot_output_file)
+    Mandelbrot.Draw(mandelbrot_config, items)
 
     Dim julia_config As IJulia = New IJulia With {
       .width = width,
@@ -35,10 +35,10 @@ Module Program
       .c_im = Double.Parse(Resources.julia_c_im),
       .threshold = Integer.Parse(Resources.julia_threshold),
       .max_iterations = Integer.Parse(Resources.julia_max_iterations),
-      .output_file = Path.Combine(output_directory, Resources.julia_output_file)
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.julia_output_file
     }
-    Julia.Draw(julia_config)
-    items.Add(Resources.julia_output_file)
+    Julia.Draw(julia_config, items)
 
     Dim tricorn_config As ITricorn = New ITricorn With {
       .width = width,
@@ -49,10 +49,10 @@ Module Program
       .y_max = Double.Parse(Resources.tricorn_y_max),
       .threshold = Integer.Parse(Resources.tricorn_threshold),
       .max_iterations = Integer.Parse(Resources.tricorn_max_iterations),
-      .output_file = Path.Combine(output_directory, Resources.tricorn_output_file)
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.tricorn_output_file
     }
-    Tricorn.Draw(tricorn_config)
-    items.Add(Resources.tricorn_output_file)
+    Tricorn.Draw(tricorn_config, items)
 
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
