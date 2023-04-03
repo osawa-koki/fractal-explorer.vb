@@ -15,6 +15,6 @@ jobs:
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.3.1
     - name: Build app for release
-      run: msbuild ./src/Program.csproj -t:rebuild -verbosity:diag -property:Configuration=Release
+      run: msbuild ./src/Program.vbproj -t:rebuild -verbosity:diag -property:Configuration=Release
     - name: Run app
       run: ./src/bin/Release/fractal-explorer.exe
