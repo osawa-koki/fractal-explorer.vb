@@ -11,7 +11,6 @@ Module Tricorn
     Dim y_min = tricorn_config.y_min
     Dim y_max = tricorn_config.y_max
 
-    Dim color_base = tricorn_config.color_hue
     Dim threshold = tricorn_config.threshold
     Dim max_iterations = tricorn_config.max_iterations
 

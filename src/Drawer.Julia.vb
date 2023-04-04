@@ -13,7 +13,6 @@ Module Julia
     Dim c_re = julia_config.c_re
     Dim c_im = julia_config.c_im
 
-    Dim color_base = julia_config.color_hue
     Dim threshold = julia_config.threshold
     Dim max_iterations = julia_config.max_iterations
 

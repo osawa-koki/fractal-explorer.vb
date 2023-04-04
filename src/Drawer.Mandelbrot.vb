@@ -11,7 +11,6 @@ Module Mandelbrot
     Dim y_min = mandelbrot_config.y_min
     Dim y_max = mandelbrot_config.y_max
 
-    Dim color_base = mandelbrot_config.color_hue
     Dim threshold = mandelbrot_config.threshold
     Dim max_iterations = mandelbrot_config.max_iterations
 
