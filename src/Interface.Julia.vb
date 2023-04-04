@@ -8,7 +8,6 @@ Public Class IJulia
   Public y_max As Double
   public c_re As Double
   public c_im As Double
-  Public color_hue As Integer
   Public threshold As Integer
   Public max_iterations As Integer
   Public output_directory As String
