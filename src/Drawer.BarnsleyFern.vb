@@ -18,6 +18,7 @@ Module BarnsleyFern
       Dim bmp As New Bitmap(width, height)
       Dim graphics As Graphics = Graphics.FromImage(bmp)
       graphics.FillRectangle(Brushes.Black, 0, 0, width, height)
+      graphics.Dispose()
 
       Dim x = 0.0
       Dim y = 0.0
@@ -58,6 +59,7 @@ Module BarnsleyFern
       Dim bmp As New Bitmap(width, height)
       Dim graphics As Graphics = Graphics.FromImage(bmp)
       graphics.FillRectangle(Brushes.White, 0, 0, width, height)
+      graphics.Dispose()
 
       Dim x = 0.0
       Dim y = 0.0
