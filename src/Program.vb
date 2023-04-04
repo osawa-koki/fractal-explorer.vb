@@ -82,6 +82,18 @@ Module Program
     }
     BarnsleyFern.Draw(barnsley_fern_config, items)
 
+    Dim recursive_tree_config As IRecursiveTree = New IRecursiveTree With {
+      .width = width,
+      .height = height,
+      .shrink = Integer.Parse(Resources.recursive_tree_shrink),
+      .length = Integer.Parse(Resources.recursive_tree_length),
+      .degree = Integer.Parse(Resources.recursive_tree_degree),
+      .max_iterations = Integer.Parse(Resources.recursive_tree_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.recursive_tree_output_file
+    }
+    RecursiveTree.Draw(recursive_tree_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

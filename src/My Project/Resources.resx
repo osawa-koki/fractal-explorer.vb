@@ -219,6 +219,21 @@
   <data name="mandelbrot.y_min" xml:space="preserve">
     <value>-1.5</value>
   </data>
+  <data name="recursive_tree.degree" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="recursive_tree.length" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="recursive_tree.max_iterations" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="recursive_tree.output_file" xml:space="preserve">
+    <value>recursive_tree.png</value>
+  </data>
+  <data name="recursive_tree.shrink" xml:space="preserve">
+    <value>60</value>
+  </data>
   <data name="tricorn.max_iterations" xml:space="preserve">
     <value>50</value>
   </data>

@@ -74,11 +74,13 @@
     <Compile Include="Drawer.BurningShip.vb" />
     <Compile Include="Drawer.Julia.vb" />
     <Compile Include="Drawer.Mandelbrot.vb" />
+    <Compile Include="Drawer.RecursiveTree.vb" />
     <Compile Include="Drawer.Tricorn.vb" />
     <Compile Include="Interface.BarnsleyFern.vb" />
     <Compile Include="Interface.BurningShip.vb" />
     <Compile Include="Interface.Julia.vb" />
     <Compile Include="Interface.Mandelbrot.vb" />
+    <Compile Include="Interface.RecursiveTree.vb" />
     <Compile Include="Interface.Tricorn.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

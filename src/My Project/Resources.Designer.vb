@@ -367,6 +367,51 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  30 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property recursive_tree_degree() As String
+            Get
+                Return ResourceManager.GetString("recursive_tree.degree", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  25 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property recursive_tree_length() As String
+            Get
+                Return ResourceManager.GetString("recursive_tree.length", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  10 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property recursive_tree_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("recursive_tree.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  recursive_tree.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property recursive_tree_output_file() As String
+            Get
+                Return ResourceManager.GetString("recursive_tree.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  60 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property recursive_tree_shrink() As String
+            Get
+                Return ResourceManager.GetString("recursive_tree.shrink", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  50 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property tricorn_max_iterations() As String
