@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="burning_ship.max_iterations" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="burning_ship.output_file" xml:space="preserve">
+    <value>burning_ship.png</value>
+  </data>
+  <data name="burning_ship.threshold" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="burning_ship.x_max" xml:space="preserve">
+    <value>-1.7</value>
+  </data>
+  <data name="burning_ship.x_min" xml:space="preserve">
+    <value>-1.8</value>
+  </data>
+  <data name="burning_ship.y_max" xml:space="preserve">
+    <value>0.02</value>
+  </data>
+  <data name="burning_ship.y_min" xml:space="preserve">
+    <value>-0.1</value>
+  </data>
   <data name="global.artifact_filename" xml:space="preserve">
     <value>items.txt</value>
   </data>

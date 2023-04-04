@@ -54,6 +54,20 @@ Module Program
     }
     Tricorn.Draw(tricorn_config, items)
 
+    Dim burning_ship_config As IBurningShip = New IBurningShip With {
+      .width = width,
+      .height = height,
+      .x_min = Double.Parse(Resources.burning_ship_x_min),
+      .x_max = Double.Parse(Resources.burning_ship_x_max),
+      .y_min = Double.Parse(Resources.burning_ship_y_min),
+      .y_max = Double.Parse(Resources.burning_ship_y_max),
+      .threshold = Integer.Parse(Resources.burning_ship_threshold),
+      .max_iterations = Integer.Parse(Resources.burning_ship_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.burning_ship_output_file
+    }
+    BurningShip.Draw(burning_ship_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

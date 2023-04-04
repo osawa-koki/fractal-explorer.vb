@@ -61,6 +61,69 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  20 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  burning_ship.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_output_file() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  10 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_threshold() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.threshold", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -1.7 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_x_max() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.x_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -1.8 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_x_min() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.x_min", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  0.02 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_y_max() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.y_max", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  -0.1 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property burning_ship_y_min() As String
+            Get
+                Return ResourceManager.GetString("burning_ship.y_min", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  items.txt に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property global_artifact_filename() As String
