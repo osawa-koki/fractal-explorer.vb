@@ -117,6 +117,27 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="barnsley_fern.max_iterations" xml:space="preserve">
+    <value>100000</value>
+  </data>
+  <data name="barnsley_fern.output_file" xml:space="preserve">
+    <value>barnsley_fern.png</value>
+  </data>
+  <data name="barnsley_fern.size_x" xml:space="preserve">
+    <value>10.0</value>
+  </data>
+  <data name="barnsley_fern.size_y" xml:space="preserve">
+    <value>95.0</value>
+  </data>
+  <data name="barnsley_fern.start_x" xml:space="preserve">
+    <value>48.0</value>
+  </data>
+  <data name="barnsley_fern.start_y" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="barnsley_fern.zoom" xml:space="preserve">
+    <value>90</value>
+  </data>
   <data name="burning_ship.max_iterations" xml:space="preserve">
     <value>20</value>
   </data>

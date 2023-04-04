@@ -68,6 +68,20 @@ Module Program
     }
     BurningShip.Draw(burning_ship_config, items)
 
+    Dim barnsley_fern_config As IBarnsleyFern = New IBarnsleyFern With {
+      .width = width,
+      .height = height,
+      .size_x = Double.Parse(Resources.barnsley_fern_size_x),
+      .size_y = Double.Parse(Resources.barnsley_fern_size_y),
+      .start_x = Double.Parse(Resources.barnsley_fern_start_x),
+      .start_y = Double.Parse(Resources.barnsley_fern_start_y),
+      .zoom = Integer.Parse(Resources.barnsley_fern_zoom),
+      .max_iterations = Integer.Parse(Resources.barnsley_fern_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.barnsley_fern_output_file
+    }
+    BarnsleyFern.Draw(barnsley_fern_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

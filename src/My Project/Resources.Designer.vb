@@ -61,6 +61,69 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  100000 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  barnsley_fern.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_output_file() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  10.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_size_x() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.size_x", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  95.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_size_y() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.size_y", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  48.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_start_x() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.start_x", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  0.0 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_start_y() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.start_y", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  90 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property barnsley_fern_zoom() As String
+            Get
+                Return ResourceManager.GetString("barnsley_fern.zoom", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  20 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property burning_ship_max_iterations() As String
