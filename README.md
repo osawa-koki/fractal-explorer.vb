@@ -4,6 +4,11 @@
 
 ## 実行方法
 
+`Visual Studio`で実行すればOKです。  
+コマンドラインから実行する場合は、以下の手順で実行できます。  
+
+---
+
 最初に`MSBuild`のパスを通します。  
 `C:\Windows\Microsoft.NET\Framework\v*****\`にある`MSBuild.exe`のパスを通します。  
 
