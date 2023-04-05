@@ -159,6 +159,21 @@
   <data name="burning_ship.y_min" xml:space="preserve">
     <value>-0.1</value>
   </data>
+  <data name="dragon_curve.delta" xml:space="preserve">
+    <value>210</value>
+  </data>
+  <data name="dragon_curve.max_iterations" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="dragon_curve.output_file" xml:space="preserve">
+    <value>dragon_curve.png</value>
+  </data>
+  <data name="dragon_curve.x" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="dragon_curve.y" xml:space="preserve">
+    <value>75</value>
+  </data>
   <data name="global.artifact_filename" xml:space="preserve">
     <value>items.txt</value>
   </data>

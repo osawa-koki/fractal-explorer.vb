@@ -187,6 +187,51 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  210 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property dragon_curve_delta() As String
+            Get
+                Return ResourceManager.GetString("dragon_curve.delta", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  15 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property dragon_curve_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("dragon_curve.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  dragon_curve.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property dragon_curve_output_file() As String
+            Get
+                Return ResourceManager.GetString("dragon_curve.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  33 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property dragon_curve_x() As String
+            Get
+                Return ResourceManager.GetString("dragon_curve.x", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  75 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property dragon_curve_y() As String
+            Get
+                Return ResourceManager.GetString("dragon_curve.y", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  items.txt に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property global_artifact_filename() As String

@@ -127,6 +127,18 @@ Module Program
     }
     SierpinskiCarpet.Draw(sierpinski_carpet_config, items)
 
+    Dim dragon_curve_config As IDragonCurve = New IDragonCurve With {
+      .width = width,
+      .height = height,
+      .x = Integer.Parse(Resources.dragon_curve_x),
+      .y = Integer.Parse(Resources.dragon_curve_y),
+      .delta = Integer.Parse(Resources.dragon_curve_delta),
+      .max_iterations = Integer.Parse(Resources.dragon_curve_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.dragon_curve_output_file
+    }
+    DragonCurve.Draw(dragon_curve_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using
