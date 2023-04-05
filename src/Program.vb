@@ -107,6 +107,16 @@ Module Program
     }
     PythagorasTree.Draw(pythagoras_tree_config, items)
 
+    Dim sierpinski_triangle_config As ISierpinskiTriangle = New ISierpinskiTriangle With {
+      .width = width,
+      .height = height,
+      .triangle_size = Integer.Parse(Resources.sierpinski_triangle_triangle_size),
+      .max_iterations = Integer.Parse(Resources.sierpinski_triangle_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.sierpinski_triangle_output_file
+    }
+    SierpinskiTriangle.Draw(sierpinski_triangle_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

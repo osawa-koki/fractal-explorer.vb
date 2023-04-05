@@ -466,6 +466,33 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  4 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property sierpinski_triangle_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("sierpinski_triangle.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  sierpinski_triangle.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property sierpinski_triangle_output_file() As String
+            Get
+                Return ResourceManager.GetString("sierpinski_triangle.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  80 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property sierpinski_triangle_triangle_size() As String
+            Get
+                Return ResourceManager.GetString("sierpinski_triangle.triangle_size", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  50 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property tricorn_max_iterations() As String

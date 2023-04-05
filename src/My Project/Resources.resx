@@ -252,6 +252,15 @@
   <data name="recursive_tree.shrink" xml:space="preserve">
     <value>60</value>
   </data>
+  <data name="sierpinski_triangle.max_iterations" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="sierpinski_triangle.output_file" xml:space="preserve">
+    <value>sierpinski_triangle.png</value>
+  </data>
+  <data name="sierpinski_triangle.triangle_size" xml:space="preserve">
+    <value>80</value>
+  </data>
   <data name="tricorn.max_iterations" xml:space="preserve">
     <value>50</value>
   </data>
