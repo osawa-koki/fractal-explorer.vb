@@ -117,6 +117,16 @@ Module Program
     }
     SierpinskiTriangle.Draw(sierpinski_triangle_config, items)
 
+    Dim sierpinski_carpet_config As ISierpinskiCarpet = New ISierpinskiCarpet With {
+      .width = width,
+      .height = height,
+      .carpet_size = Integer.Parse(Resources.sierpinski_carpet_carpet_size),
+      .max_iterations = Integer.Parse(Resources.sierpinski_carpet_max_iterations),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.sierpinski_carpet_output_file
+    }
+    SierpinskiCarpet.Draw(sierpinski_carpet_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using
