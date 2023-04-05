@@ -31,7 +31,6 @@ Module PythagorasTree
     Return points
   End Function
 
-
   Sub RecursiveDraw(graphics As Graphics, p1 As Point, p2 As Point, size As Integer, current_degree As Integer, n As Integer, i As Integer, is_white As Boolean)
     If n = 0 Then
       Return
@@ -79,7 +78,6 @@ Module PythagorasTree
       )
     End If
   End Sub
-
 
   Sub Draw(pythagoras_tree_config As IPythagorasTree, items As List(Of String))
     width = pythagoras_tree_config.width
