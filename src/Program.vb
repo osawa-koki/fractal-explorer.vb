@@ -94,6 +94,19 @@ Module Program
     }
     RecursiveTree.Draw(recursive_tree_config, items)
 
+    Dim pythagoras_tree_config As IPythagorasTree = New IPythagorasTree With {
+      .width = width,
+      .height = height,
+      .size = Integer.Parse(Resources.pythagoras_tree_size),
+      .degree = Integer.Parse(Resources.pythagoras_tree_degree),
+      .max_iterations = Integer.Parse(Resources.pythagoras_tree_max_iterations),
+      .Left = Integer.Parse(Resources.pythagoras_tree_left),
+      .bottom = Integer.Parse(Resources.pythagoras_tree_bottom),
+      .output_directory = Resources.global_output_directory,
+      .output_file = Resources.pythagoras_tree_output_file
+    }
+    PythagorasTree.Draw(pythagoras_tree_config, items)
+
     Using sw As New StreamWriter(Path.Combine(output_directory, Resources.global_artifact_filename), True)
       sw.WriteLine(String.Join(vbCrLf, items.ToArray()))
     End Using

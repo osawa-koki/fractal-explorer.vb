@@ -219,6 +219,24 @@
   <data name="mandelbrot.y_min" xml:space="preserve">
     <value>-1.5</value>
   </data>
+  <data name="pythagoras_tree.bottom" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pythagoras_tree.degree" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="pythagoras_tree.left" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pythagoras_tree.max_iterations" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pythagoras_tree.output_file" xml:space="preserve">
+    <value>pythagoras_tree.png</value>
+  </data>
+  <data name="pythagoras_tree.size" xml:space="preserve">
+    <value>15</value>
+  </data>
   <data name="recursive_tree.degree" xml:space="preserve">
     <value>30</value>
   </data>

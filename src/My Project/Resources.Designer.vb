@@ -367,6 +367,60 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  20 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_bottom() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.bottom", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  60 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_degree() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.degree", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  20 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_left() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.left", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  10 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_max_iterations() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.max_iterations", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  pythagoras_tree.png に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_output_file() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.output_file", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  15 に類似しているローカライズされた文字列を検索します。
+        '''</summary>
+        Friend ReadOnly Property pythagoras_tree_size() As String
+            Get
+                Return ResourceManager.GetString("pythagoras_tree.size", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  30 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property recursive_tree_degree() As String
