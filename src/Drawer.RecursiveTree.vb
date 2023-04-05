@@ -16,7 +16,7 @@ Module RecursiveTree
   Dim degree As Integer
   Dim max_iterations As Integer
 
-  Sub RecDraw(bmp As Bitmap, x As Integer, y As Integer, current_degree As Integer, n As Integer, pen As Pen)
+  Sub RecDraw(graphics As Graphics, x As Integer, y As Integer, current_degree As Integer, n As Integer, pen As Pen)
     If max_iterations < n Then
       Return
     End If
@@ -65,10 +65,8 @@ Module RecursiveTree
     End If
 
     For Each m As Object In moved
-      Dim g As Graphics = Graphics.FromImage(bmp)
-      g.DrawLine(pen, x, y, m.X, m.Y)
-      g.Dispose()
-      RecDraw(bmp, m.X, m.Y, m.Degree, n + 1, pen)
+      graphics.DrawLine(pen, x, y, m.X, m.Y)
+      RecDraw(graphics, m.X, m.Y, m.Degree, n + 1, pen)
     Next
   End Sub
 
@@ -88,7 +86,7 @@ Module RecursiveTree
 
       graphics.DrawLine(Pens.White, CInt(width / 2), CInt(height), CInt(width / 2), CInt(height - height * length))
 
-      RecDraw(bmp, CInt(width / 2), CInt(height - height * length), 90, 0, Pens.White)
+      RecDraw(graphics, CInt(width / 2), CInt(height - height * length), 90, 0, Pens.White)
 
       Dim file_name = recursive_tree_config.output_file.Replace(".png", ".white.png")
       bmp.Save(Path.Combine(recursive_tree_config.output_directory, file_name), Imaging.ImageFormat.Png)
@@ -102,7 +100,7 @@ Module RecursiveTree
 
       graphics.DrawLine(Pens.Black, CInt(width / 2), CInt(height), CInt(width / 2), CInt(height - height * length))
 
-      RecDraw(bmp, CInt(width / 2), CInt(height - height * length), 90, 0, Pens.Black)
+      RecDraw(graphics, CInt(width / 2), CInt(height - height * length), 90, 0, Pens.Black)
 
       Dim file_name = recursive_tree_config.output_file.Replace(".png", ".black.png")
       bmp.Save(Path.Combine(recursive_tree_config.output_directory, file_name), Imaging.ImageFormat.Png)
