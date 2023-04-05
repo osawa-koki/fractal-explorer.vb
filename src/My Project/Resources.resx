@@ -160,7 +160,7 @@
     <value>-0.1</value>
   </data>
   <data name="dragon_curve.delta" xml:space="preserve">
-    <value>210</value>
+    <value>50</value>
   </data>
   <data name="dragon_curve.max_iterations" xml:space="preserve">
     <value>15</value>

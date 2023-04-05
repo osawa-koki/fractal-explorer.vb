@@ -187,7 +187,7 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  210 に類似しているローカライズされた文字列を検索します。
+        '''  50 に類似しているローカライズされた文字列を検索します。
         '''</summary>
         Friend ReadOnly Property dragon_curve_delta() As String
             Get
