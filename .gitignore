@@ -522,3 +522,8 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,visualbasic,visualstudio,visualstudiocode
+
+/**/dist/*
+!/**/dist/.gitkeep
+!/**/dist/index.html
+!/**/dist/tako.png

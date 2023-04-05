@@ -46,7 +46,7 @@
     
     mimetype: application/x-microsoft.net.object.binary.base64
     value   : The object must be serialized with 
-            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
             : and then encoded with base64 encoding.
     
     mimetype: application/x-microsoft.net.object.soap.base64
@@ -60,6 +60,7 @@
             : and then encoded with base64 encoding.
     -->
   <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
     <xsd:element name="root" msdata:IsDataSet="true">
       <xsd:complexType>
         <xsd:choice maxOccurs="unbounded">
@@ -68,9 +69,10 @@
               <xsd:sequence>
                 <xsd:element name="value" type="xsd:string" minOccurs="0" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="name" use="required" type="xsd:string" />
               <xsd:attribute name="type" type="xsd:string" />
               <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="assembly">
@@ -85,9 +87,10 @@
                 <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
                 <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
               </xsd:sequence>
-              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
               <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
               <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
             </xsd:complexType>
           </xsd:element>
           <xsd:element name="resheader">
@@ -109,9 +112,198 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="barnsley_fern.max_iterations" xml:space="preserve">
+    <value>100000</value>
+  </data>
+  <data name="barnsley_fern.output_file" xml:space="preserve">
+    <value>barnsley_fern.png</value>
+  </data>
+  <data name="barnsley_fern.size_x" xml:space="preserve">
+    <value>10.0</value>
+  </data>
+  <data name="barnsley_fern.size_y" xml:space="preserve">
+    <value>95.0</value>
+  </data>
+  <data name="barnsley_fern.start_x" xml:space="preserve">
+    <value>48.0</value>
+  </data>
+  <data name="barnsley_fern.start_y" xml:space="preserve">
+    <value>0.0</value>
+  </data>
+  <data name="barnsley_fern.zoom" xml:space="preserve">
+    <value>90</value>
+  </data>
+  <data name="burning_ship.max_iterations" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="burning_ship.output_file" xml:space="preserve">
+    <value>burning_ship.png</value>
+  </data>
+  <data name="burning_ship.threshold" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="burning_ship.x_max" xml:space="preserve">
+    <value>-1.7</value>
+  </data>
+  <data name="burning_ship.x_min" xml:space="preserve">
+    <value>-1.8</value>
+  </data>
+  <data name="burning_ship.y_max" xml:space="preserve">
+    <value>0.02</value>
+  </data>
+  <data name="burning_ship.y_min" xml:space="preserve">
+    <value>-0.1</value>
+  </data>
+  <data name="dragon_curve.delta" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="dragon_curve.max_iterations" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="dragon_curve.output_file" xml:space="preserve">
+    <value>dragon_curve.png</value>
+  </data>
+  <data name="dragon_curve.x" xml:space="preserve">
+    <value>33</value>
+  </data>
+  <data name="dragon_curve.y" xml:space="preserve">
+    <value>75</value>
+  </data>
+  <data name="global.artifact_filename" xml:space="preserve">
+    <value>items.txt</value>
+  </data>
+  <data name="global.height" xml:space="preserve">
+    <value>512</value>
+  </data>
+  <data name="global.output_directory" xml:space="preserve">
+    <value>./dist</value>
+  </data>
+  <data name="global.width" xml:space="preserve">
+    <value>512</value>
+  </data>
+  <data name="julia.c_im" xml:space="preserve">
+    <value>0.6</value>
+  </data>
+  <data name="julia.c_re" xml:space="preserve">
+    <value>-0.4</value>
+  </data>
+  <data name="julia.max_iterations" xml:space="preserve">
+    <value>70</value>
+  </data>
+  <data name="julia.output_file" xml:space="preserve">
+    <value>julia.png</value>
+  </data>
+  <data name="julia.threshold" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="julia.x_max" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="julia.x_min" xml:space="preserve">
+    <value>-1.5</value>
+  </data>
+  <data name="julia.y_max" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="julia.y_min" xml:space="preserve">
+    <value>-1.5</value>
+  </data>
+  <data name="mandelbrot.max_iterations" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="mandelbrot.output_file" xml:space="preserve">
+    <value>mandelbrot.png</value>
+  </data>
+  <data name="mandelbrot.threshold" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mandelbrot.x_max" xml:space="preserve">
+    <value>0.8</value>
+  </data>
+  <data name="mandelbrot.x_min" xml:space="preserve">
+    <value>-2.2</value>
+  </data>
+  <data name="mandelbrot.y_max" xml:space="preserve">
+    <value>1.5</value>
+  </data>
+  <data name="mandelbrot.y_min" xml:space="preserve">
+    <value>-1.5</value>
+  </data>
+  <data name="pythagoras_tree.bottom" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pythagoras_tree.degree" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="pythagoras_tree.left" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="pythagoras_tree.max_iterations" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="pythagoras_tree.output_file" xml:space="preserve">
+    <value>pythagoras_tree.png</value>
+  </data>
+  <data name="pythagoras_tree.size" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="recursive_tree.degree" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="recursive_tree.length" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="recursive_tree.max_iterations" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="recursive_tree.output_file" xml:space="preserve">
+    <value>recursive_tree.png</value>
+  </data>
+  <data name="recursive_tree.shrink" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="sierpinski_carpet.carpet_size" xml:space="preserve">
+    <value>90</value>
+  </data>
+  <data name="sierpinski_carpet.max_iterations" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="sierpinski_carpet.output_file" xml:space="preserve">
+    <value>sierpinski_carpet.png</value>
+  </data>
+  <data name="sierpinski_triangle.max_iterations" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="sierpinski_triangle.output_file" xml:space="preserve">
+    <value>sierpinski_triangle.png</value>
+  </data>
+  <data name="sierpinski_triangle.triangle_size" xml:space="preserve">
+    <value>80</value>
+  </data>
+  <data name="tricorn.max_iterations" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="tricorn.output_file" xml:space="preserve">
+    <value>tricorn.png</value>
+  </data>
+  <data name="tricorn.threshold" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tricorn.x_max" xml:space="preserve">
+    <value>1.7</value>
+  </data>
+  <data name="tricorn.x_min" xml:space="preserve">
+    <value>-2.3</value>
+  </data>
+  <data name="tricorn.y_max" xml:space="preserve">
+    <value>2.0</value>
+  </data>
+  <data name="tricorn.y_min" xml:space="preserve">
+    <value>-2.0</value>
+  </data>
 </root>
